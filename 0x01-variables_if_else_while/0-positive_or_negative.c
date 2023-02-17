@@ -1,39 +1,22 @@
 #include <stdlib.h>
-
 #include <time.h>
-
 #include <stdio.h>
-
-
-
-
 /**
-
- * main - printsif a number is positive, zero or negative 
- * Return: Always (sucsses)
- *
+ * main - main block
+ * discription: ger a random number and print
+ * Return: 0
  */
-
 int main(void)
-
 {
+	int n;
 
-        int n;
-
-        srand(time(0));
-        n = rand() - RAND_MAX / 2;
-
-        if (n > 0)
-        {
-        printf("%d is positive\n", n);
-        }
-        else if (n==0)
-        {
-         printf("%d is zero\n", n);
-        }
-        else
-        {
-         printf("%d is positive\n", n);
-        }
-        return (0);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n == 0)
+		printf("%d is zero\n", n);
+	else if
+		printf("%d is negative\n", n);
+	return (0);
 }
