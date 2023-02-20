@@ -7,22 +7,15 @@
  */
 int main(void)
 {
-	int i;
-	int j;
+	char a;
 
-	for (i = 10; i <= 19; i++)
+	for (a = 'a'; a <= 'z' ; a++)
 	{
-		for (j = 10; j <= 19; j++)
+		if (a == 'q' || a == 'e')
 		{
-			putchar((i % 10) + '0');
-			putchar((j % 10) + '0');
-			if (i != 19 ||  j != 19)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-
+			continue;
 		}
+		putchar(a);
 	}
 	putchar('\n');
 	return (0);
